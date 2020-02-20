@@ -1,4 +1,7 @@
-## Welcome to GitHub Pages
+## Master Thesis Blog
+
+In these blog you will find the weekly work for my master's thesis. Blalalala
+
 
 You can use the [editor on GitHub](https://github.com/rubendfcosta/MasterThesisBlog/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
