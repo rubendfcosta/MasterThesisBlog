@@ -14,15 +14,15 @@ p {
 }
 
 a {
-  color: #4f9e94;
+  color: rgba(252, 50, 0, 0.877);
 }
 
 a:hover {
-  color: #4f9e94;
+  color: rgba(252, 50, 0, 0.877);
 }
 
 .text-primary {
-  color: #4f9e94 !important;
+  color: rgba(252, 50, 0, 0.877) !important;
 }
 
 h1,
@@ -246,7 +246,7 @@ header.masthead .intro-text .intro-heading {
   height: 100%;
   transition: all ease 0.5s;
   opacity: 0;
-  background: rgba(254, 209, 54, 0.9);
+  background: #4f9e94;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
