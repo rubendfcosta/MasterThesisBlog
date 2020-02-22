@@ -61,12 +61,12 @@ h6 {
 }
 
 ::-moz-selection {
-  background: #4f9e94;
+  background: rgba(252, 50, 0, 0.877);
   text-shadow: none;
 }
 
 ::selection {
-  background: #4f9e94;
+  background: rgba(252, 50, 0, 0.877);
   text-shadow: none;
 }
 
@@ -93,8 +93,8 @@ img::-moz-selection {
 }
 
 .btn-primary {
-  background-color: #4f9e94;
-  border-color: #4f9e94;
+  background-color: rgba(252, 50, 0, 0.877);
+  border-color: rgba(252, 50, 0, 0.877);
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
