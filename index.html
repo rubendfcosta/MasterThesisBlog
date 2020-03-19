@@ -157,7 +157,21 @@
             <p class="text-muted">Fast.ai</p>
           </div>
         </div>
-        <div class="col-md-8 col-sm-8 portfolio-item">
+        <div class="col-md-4 col-sm-4 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/markus-spiske-hvSr_CVecVI-unsplash.jpg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Week 6</h4>
+            <p class="text-muted">Panoramic Images</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 portfolio-item">
           <!--<a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
             <div class="portfolio-hover">
               <div class="portfolio-hover-content">
@@ -171,20 +185,6 @@
             <p class="text-muted">First Researches</p>
           </div>-->
         </div>
-        <!--<div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/markus-spiske-hvSr_CVecVI-unsplash.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>Week 4</h4>
-            <p class="text-muted">Lar meeting</p>
-          </div>
-        </div>-->
       </div>
     </div>
   </section>
@@ -241,7 +241,7 @@
 
   <!-- Portfolio Modals -->
 
-  <!-- Modal 1 -->
+  <!-- Modal 1 | Getting Started-->
   <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -277,7 +277,7 @@
     </div>
   </div>
 
-  <!-- Modal 2 -->
+  <!-- Modal 2 | First Researches -->
   <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -315,7 +315,7 @@
     </div>
   </div>
 
-  <!-- Modal 3 -->
+  <!-- Modal 3 | LAR meeting -->
   <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -349,7 +349,7 @@
     </div>
   </div>
 
-  <!-- Modal 4 -->
+  <!-- Modal 4 | Fast.ai -->
   <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -381,7 +381,7 @@
     </div>
   </div>
 
-  <!-- Modal 5 -->
+  <!-- Modal 5 | Panoramic Images-->
   <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -395,14 +395,38 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Southwest</li>
-                  <li>Category: Website Design</li>
+                <h2 class="text-uppercase">Week 6</h2>
+                <p class="item-intro text-muted">Panoramic Images.</p>
+                <p  style="text-align: justify;">The initial objectives for this week were continuing to improve my knowledge about Deep Learning Networks with the fast.ai course and to do some tests with panoramic images on the outside. 
+                  For that, I started with the second topic since a <a href="https://www.linkedin.com/in/tiago-almeida-5581ba139/">LAR researcher </a>had already developed a <a href="https://github.com/tmralmeida/ros-panorama-package">ROS package</a> to obtain panoramic images.
+                  Briefly, this package package subscribes to images of different ROS topics and creates a panoramic image, which is published in a ROS node. </p>
+                <p style="text-align: justify;">
+                In order to create the panoramic image, the program tries to find features in the images and compare the keypoints of those to create the transformation matrices of the lateral images.
+                 The process to identify the keypoints of the images is only executed while there are no transformation matrices associated to the left and right images. After the matrices are defined, the program uses these matrices to apply the transformations to the images that the cameras acquire.
+                </p>
+                <p style="text-align: justify;">
+                After making the necessary changes to the package, I did some tests at home and since the access to the university is restricted due to the outbreak of Covid-19, I decided to mount a system to position the cameras in a car with similar dimensions to the ATLASCAR2. 
+                Bellow you can see different setups that I tested to evealuate if there were any differences between the panoramic images in different situations. As I expected, the third setup was where I got better panoramic images and so I ended up making a more robust setup to be able 
+                to drive the car while images were collected, as you can see in the fourth image.
+                </p>
+                <img style="width: 30%; margin-left: 5%;" src="img/portfolio/IMG_6135.jpg" alt="">
+                <img style="width: 30%; margin-right: 5%;" src="img/portfolio/IMG_6127.jpg" alt="">
+                <img style="width: 30%; margin-left:5%;" src="img/portfolio/IMG_6133.jpg" alt="">
+                <img style="width: 30%; margin-right: 5%;" src="img/portfolio/IMG_6148.jpg" alt="">
+                <p style="text-align: justify;">
+                  In the following videos you can see the images to be captured while the car is moving and all the videos were recorded with the setup shown above. During the recording, the framerate of the panoramic image droped to 2 FPS while normally I could capture images at 6 FPS.
+                  To increase the framerate I have to try to parallelize the processes that apply the transformations to the lateral images.
+                  </p>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/roDOfDl2GEc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/69jH8Cza7gg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/sQZLkS85MRI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <p style="text-align: justify;">
+                    With all these tests the time to continue the fats.ai course was not much and so I didn't make much headway over the last week, even so it was quite useful to make these experiments to understand how the panoramic images that are obtained with this package will be useful and 
+                    to better understand what will be some constraints of the assemvly of the cameras.   
+                    </p>
+                
+                  <ul class="list-inline">
+                  <li>Date: 19 March 2017</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
