@@ -186,6 +186,28 @@
           </div>
         </div>
       </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-4 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal7">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/markus-spiske-hvSr_CVecVI-unsplash.jpg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Week 8</h4>
+            <p class="text-muted">Panoramic Images</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 portfolio-item">
+          
+        </div>
+        <div class="col-md-4 col-sm-4 portfolio-item">
+         
+        </div>
+      </div>
     </div>
   </section>
 
@@ -439,7 +461,7 @@
     </div>
   </div>
 
-  <!-- Modal 6 -->
+  <!-- Modal 6 | More researches-->
   <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -475,6 +497,82 @@
                 
                   <ul class="list-inline">
                   <li>Date: 26 March 2020</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 7 | C++ Initial-->
+  <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Week 8</h2>
+                <p class="item-intro text-muted">Panoramic Images.</p>
+                <p  style="text-align: justify;">As mentioned in last week's post, this week I continued to convert the panoramic imaging program to C++ to see if we could get a bigger framerate.
+                  After completing the conversion I tested different scenarios to see which one was more favorable to us and the values of the framerates in each situation are below.
+                </p>
+                
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Language</th>
+                      <th scope="col">Framerate [FPS]</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">C++ </th>
+                      <td>5,109</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">C++ with #pragma</th>
+                      <td>5,804</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Python</th>
+                      <td>5,601</td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <p  style="text-align: justify;">With these results we can conclude that the conversion to C++ has not become as beneficial as expected however, before leaving the idea of classifying the panoramic
+                   images I may try to find some more solutions in the next few days but if there is no viable solution I will have to explore a solution where the the first thing to do is 
+                   the segmentation and after that create a road map mixing up the information of all cameras. You can see a similar solution on the video bellow.
+                </p>
+                <br>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/oBklltKXtDE?start=220" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <br>
+                <br>
+                <p  style="text-align: justify;">During this time, I also made some test with different amounts of lighting to understand if there was any influence on the speed of image capture.
+                  I ended up testing two different scenarios, the first one with the cameras pointing outside during the day and the other at night. The images below were the two scenarios tested and 
+                  while on the left one I managed to capture images to a framerate of 29 FPS on the other I only managed to get a framerate of 15 FPS.  
+                </p>
+                <br>
+                <img style="width: 30%; margin-left: 5%;" src="img/portfolio/teste2M.jpg" alt="">
+                <img style="width: 30%; margin-right: 5%;" src="img/portfolio/91982020_645000352730748_6496024832746979328_n.jpg" alt="">
+                <p  style="text-align: justify;">This is due to the fact that when the environment is darker the exposure time that the camera needs to capture a image 
+                  is bigger and with that the framerate cannot be the same as in a brighter environment. Therefore, for testing during the day we should not have problems 
+                  with the framerate but if we want to test in places with low light we will be limited to 15 FPS.
+               </p>
+                  <ul class="list-inline">
+                  <li>Date: 2 April 2020</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
