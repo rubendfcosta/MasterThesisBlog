@@ -202,7 +202,18 @@
           </div>
         </div>
         <div class="col-md-4 col-sm-4 portfolio-item">
-          
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal8">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/markus-spiske-hvSr_CVecVI-unsplash.jpg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Week 9</h4>
+            <p class="text-muted">Images Classification</p>
+          </div>
         </div>
         <div class="col-md-4 col-sm-4 portfolio-item">
          
@@ -573,6 +584,54 @@
                </p>
                   <ul class="list-inline">
                   <li>Date: 2 April 2020</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 8 | Images Classification-->
+  <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Week 9</h2>
+                <p class="item-intro text-muted">Images Classification.</p>
+                <p  style="text-align: justify;">As we saw last week, we couldn't get the framerate needed to have the real-time panoramas, which led to slight changes in the thesis. 
+                  So, this week I focused on exploring the classification of the images individually, applying some of the knowledge that I acquired with the fast.ai course.</p>
+                
+                <p  style="text-align: justify;">I used a Resnet34 network and trained it with the Camvid dataset and then applied the trained network to some images. 
+                  The results obtained were not very satisfactory as you can see in the images below.
+                </p>
+                <br>
+                <img style="width: 30%; margin-left: 5%;" src="img/portfolio/Week9/IMG_6229.jpg" alt="">
+                <img style="width: 30%; margin-right: 5%;" src="img/portfolio/Week9/Result1.png" alt="">
+                <img style="width: 30%; margin-left: 5%;" src="img/portfolio/Week9/IMG_6231.jpg" alt="">
+                <img style="width: 30%; margin-right: 5%;" src="img/portfolio/Week9/Result3.png" alt="">
+                <img style="width: 30%; margin-left: 5%;" src="img/portfolio/Week9/Aveiro4.jpg" alt="">
+                <img style="width: 30%; margin-right: 5%;" src="img/portfolio/Week9/Result4.png" alt="">
+
+                <p  style="text-align: justify;"> The next step at this point will just be to focus on identifying the road or the lines that limit it in individual images,
+                   exploring different datasets and other types of architectures to define the one that best fits our problem. 
+                   Later I should explore the concatenation of the road identified in the different cameras to obtain what will be a panoramic image.
+               </p>
+                  <ul class="list-inline">
+                  <li>Date: 9 April 2020</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
