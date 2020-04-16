@@ -216,7 +216,18 @@
           </div>
         </div>
         <div class="col-md-4 col-sm-4 portfolio-item">
-         
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal9">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/markus-spiske-hvSr_CVecVI-unsplash.jpg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Week 10</h4>
+            <p class="text-muted">Workflow and segmentation</p>
+          </div>
         </div>
       </div>
     </div>
@@ -643,6 +654,316 @@
       </div>
     </div>
   </div>
+
+    <!-- Modal 9 | Workflow and segmentation-->
+    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Week 10</h2>
+                  <p class="item-intro text-muted">Workflow and segmentation.</p>
+                  <p  style="text-align: justify;">This week I will start to explain the workflow of the program that makes the image segmentation and 
+                    after that I'll show you some of the work I've done over the week. <br><br></p>
+                  <h3 class="text-uppercase">Workflow</h3>
+                  <br>
+                  <br>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-1 mx-auto"></div>
+              <div class="col-lg-3 mx-auto">
+                <div class="modal-body">
+                  <h4 class="text-uppercase" style="padding-top: 30%;  text-align: left;color: #011224;">Image<br>capture</h4>
+                </div>
+              </div>
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <img style="width: 70%; margin-left: 10%;" src="img/portfolio/Week10/4x/Ativo 2@4x.png" alt="">
+                </div>
+              </div>
+              <div class="col-lg-1 mx-auto"></div>
+            </div>
+            <div class="row">
+              <div class="col-lg-1 mx-auto"></div>
+              <div class="col-lg-3 mx-auto">
+                <div class="modal-body">
+                  <h4 class="text-uppercase" style="padding-top: 30%;  text-align: left;color: #011224;">Extrinsic Parameters Calculation</h4>
+                </div>
+              </div>
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <img style="width: 70%; margin-left: 5%;" src="img/portfolio/Week10/4x/Ativo 3@4x.png" alt="">
+                </div>
+              </div>
+              <div class="col-lg-1 mx-auto"></div>
+            </div>
+            <div class="row">
+              <div class="col-lg-1 mx-auto"></div>
+              <div class="col-lg-3 mx-auto">
+                <div class="modal-body">
+                  <h4 class="text-uppercase" style="padding-top: 30%; text-align: left;color: #011224;">Image Segmentation</h4>
+                </div>
+              </div>
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <img style="width: 30%; margin-left: 5%;" src="img/portfolio/Week10/4x/Ativo 4@4x.png" alt="">
+                  <img style="width: 31%; margin-left: 5%;" src="img/portfolio/Week10/4x/Ativo 5@4x.png" alt="">
+                </div>
+              </div>
+              <div class="col-lg-1 mx-auto"></div>
+            </div>
+            <div class="row">
+              <div class="col-lg-1 mx-auto"></div>
+              <div class="col-lg-3 mx-auto">
+                <div class="modal-body">
+                  <h4 class="text-uppercase" style="padding-top: 10%; text-align: left;color: #011224;">Transformation of segmented parts into polygons</h4>
+                </div>
+              </div>
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <img style="width: 30%; margin-left: 5%;" src="img/portfolio/Week10/4x/Ativo 6@4x.png" alt="">
+                  <img style="width: 30%; margin-left: 5%;" src="img/portfolio/Week10/4x/Ativo 7@4x.png" alt="">
+                </div>
+              </div>
+              <div class="col-lg-1 mx-auto"></div>
+            </div>
+            <div class="row">
+              <div class="col-lg-1 mx-auto"></div>
+              <div class="col-lg-3 mx-auto">
+                <div class="modal-body">
+                  <h4 class="text-uppercase" style="padding-top: 0%; text-align: left;color: #011224;">Representation of all polygons detected in a panoramic image </h4>
+                </div>
+              </div>
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <img style="width: 50%; margin-left: 5%;" src="img/portfolio/Week10/4x/Ativo 8@4x.png" alt="">
+                </div>
+              </div>
+              <div class="col-lg-1 mx-auto"></div>
+            </div>
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+
+                  <p  style="text-align: justify;"><br><br>As you can see in the diagram above, the first task the program does is to acquire 
+                    the images from the three cameras and then publish them in ROS topics. After that, the program calculates the transformations 
+                    from the lateral images to the central one through the keypoints it finds in each pair of photos. This task is used to transform 
+                    the perspective of the polygons. The third and fourth task makes the segmentation of the image and converts the result of the segmentation into a polygon.
+                    In the last task the transformations calculated in Task 2 are used to represent in a panoramic image what was detected and its location.</p>
+                    <br>
+                    <h3 class="text-uppercase">Training Process</h3>
+                    <p  style="text-align: justify;"><br>Next I will show you some of the work I have done this week, which follows in part what was explained in the previous section. 
+                      Before proceeding with the image segmentation, and not having achieved the desired precision with last week's work, I ended up training the network again.
+                      </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-1 mx-auto"></div>
+              <div class="col-lg-3 mx-auto">
+                <div class="modal-body">
+                  <h4 class="text-uppercase" style="padding-top: 0%; text-align: left;color: #011224;">Learning Rate</h4>
+                  <p style="text-align: justify;"><br>First, we loaded the parameters of the trained model last week and tried to find out the best learning rate to train our model. 
+                    After analyzing the graph, I ended up choosing a learning rate of <code>3e-5</code> and trained the model during 10 epochs.</p>
+                </div>
+              </div>
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <img style="width: 70%; margin-left: 5%;" src="img/portfolio/Week10/LR.png" alt="">
+                </div>
+              </div>
+              <div class="col-lg-1 mx-auto"></div>
+            </div>
+            <div class="row">
+              <div class="col-lg-1 mx-auto"></div>
+              <div class="col-lg-4 mx-auto">
+                <div class="modal-body">
+                  <h4 class="text-uppercase" style="padding-top: 0%; text-align: left;color: #011224;">Training</h4>
+                  <p style="text-align: justify;"><br>In the table on the left, we can see the evolution of accuracy and losses during training. 
+                    <br>The values in the 2<sup>nd</sup> and 3<sup>rd</sup> columns correspond to the loss values in the training dataset and the 
+                    validation dataset, respectively. In the 4<sup>th</sup> column are the precision values, which in this case are measured by 
+                    dividing the number of correct pixels by the total number.</p>
+                </div>
+              </div>
+              <div class="col-lg-7 mx-auto">
+                <div class="modal-body">
+                  <table class="table" height="50%">
+                    <thead>
+                      <tr>
+                        <th>epoch</th>
+                        <th>train_loss</th>
+                        <th>valid_loss</th>
+                        <th>acc_camvid</th>
+                        <th>time</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>0</td>
+                        <td>0.576482</td>
+                        <td>0.372720</td>
+                        <td>0.894483</td>
+                        <td>06:53</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>0.510138</td>
+                        <td>0.363434</td>
+                        <td>0.895801</td>
+                        <td>07:02</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>0.459025</td>
+                        <td>0.346925</td>
+                        <td>0.900112</td>
+                        <td>07:03</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>0.497980</td>
+                        <td>0.330292</td>
+                        <td>0.904698</td>
+                        <td>07:02</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>0.492121</td>
+                        <td>0.372894</td>
+                        <td>0.895368</td>
+                        <td>07:02</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>0.438139</td>
+                        <td>0.325402</td>
+                        <td>0.908062</td>
+                        <td>07:02</td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>0.439658</td>
+                        <td>0.340307</td>
+                        <td>0.901518</td>
+                        <td>07:02</td>
+                      </tr>
+                      <tr>
+                        <td>7</td>
+                        <td>0.400334</td>
+                        <td>0.361814</td>
+                        <td>0.902252</td>
+                        <td>07:01</td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>0.362851</td>
+                        <td>0.311068</td>
+                        <td>0.907501</td>
+                        <td>07:02</td>
+                      </tr>
+                      <tr>
+                        <td>9</td>
+                        <td>0.309660</td>
+                        <td>0.287874</td>
+                        <td>0.914652</td>
+                        <td>07:02</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="col-lg-1 mx-auto"></div>
+            </div>
+            <div class="row">
+              <div class="col-lg-10 mx-auto">
+                <div class="modal-body">
+
+                    <h4 class="text-uppercase" style="text-align: left;color: #011224;">Image Segmentation</h4>
+
+                      <h5 class="text-uppercase" style="text-align: left; color: #3e7e75;">Image 1</h6>
+                      <br>
+                      <img style="width: 44%; margin-left: 5%;" src="img/portfolio/Week10/6231.png" alt="">
+                      <img style="width: 44%; margin-left: 5%;" src="img/portfolio/Week10/segmentation_6231.png" alt="">
+                      <br>
+                      <br>
+                      <h5 class="text-uppercase" style="text-align: left;color: #3e7e75;">Image 2</h6>
+                      <br>
+                      <img style="width: 44%; margin-left: 5%;" src="img/portfolio/Week10/6230.png" alt="">
+                      <img style="width: 44%; margin-left: 5%;" src="img/portfolio/Week10/segmentation_6230.png" alt="">
+                      <br>
+                      <br>
+                      <h5 class="text-uppercase" style="text-align: left;color: #3e7e75;">Image 3</h6>
+                      <br>
+                      <img style="width: 44%; margin-left: 5%;" src="img/portfolio/Week10/6229.png" alt="">
+                      <img style="width: 44%; margin-left: 5%;" src="img/portfolio/Week10/segmentation_6229.png" alt="">
+                      <br>
+                      <br>
+                      <p  style="text-align: justify;"><br>As we can see, and compared to last week, this week's results were far superior. 
+                        This was because we trained all the layers of the model which led us to obtain an accuracy of 91%. The upcoming work will 
+                        be focused on trying different datasets and improving the accuracy of our models. 
+                      </p>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-10 mx-auto">
+                <div class="modal-body">
+
+                    <h4 class="text-uppercase" style="text-align: left;color: #011224;">Road & Lane Marks</h4>
+
+                      <h5 class="text-uppercase" style="text-align: left; color: #3e7e75;">Image 1</h6>
+                      <br>
+                      <img style="width: 44%; margin-left: 5%;" src="img/portfolio/Week10/Segmentation_6231.png" alt="">
+                      <img style="width: 44%; margin-left: 5%;" src="img/portfolio/Week10/Polygon_Cropped_6231.png" alt="">
+                      <br>
+                      <br>
+                      <h5 class="text-uppercase" style="text-align: left;color: #3e7e75;">Image 2</h6>
+                      <br>
+                      <img style="width: 44%; margin-left: 5%;" src="img/portfolio/Week10/Segmentation_6230.png" alt="">
+                      <img style="width: 44%; margin-left: 5%;" src="img/portfolio/Week10/Polygon_Cropped_6230.png" alt="">
+                      <br>
+                      <br>
+                      <h5 class="text-uppercase" style="text-align: left;color: #3e7e75;">Image 3</h6>
+                      <br>
+                      <img style="width: 44%; margin-left: 5%;" src="img/portfolio/Week10/Segmentation_6229.png" alt="">
+                      <img style="width: 44%; margin-left: 5%;" src="img/portfolio/Week10/Polygon_Cropped_6229.png" alt="">
+                      <br>
+                      <br>
+                      <p  style="text-align: justify;"><br>After having performed the segmentation of the individual images, 
+                        I proceeded with the conversion of the areas that interested me. 
+                       At the moment, I only focused on the classes that include road and lane marks, and through the tensors 
+                       of the segmented images I was able to see in which pixels these classes had been detected. <br>With this, 
+                       I created an array where the regions where the car can drive are represented by the yellow ones 
+                       in the figures above and the sections that we are not interested in at the moment represented in purple.
+                      </p>
+                </div>
+              </div>
+            </div>
+            
+            
+                    <ul class="list-inline">
+                    <li>Date: 17 April 2020</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
