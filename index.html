@@ -98,6 +98,8 @@
           <h3 class="section-subheading text-muted">Find more about the work that I have been doing.</h3>
         </div>
       </div>
+
+
       <div class="row">
         <div class="col-md-4 col-sm-4 portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
@@ -142,6 +144,8 @@
           </div>
         </div>
       </div>
+
+
       <div class="row">
         <div class="col-md-4 col-sm-4 portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
@@ -186,6 +190,8 @@
           </div>
         </div>
       </div>
+
+
       <div class="row">
         <div class="col-md-4 col-sm-4 portfolio-item">
           <a class="portfolio-link" data-toggle="modal" href="#portfolioModal7">
@@ -228,6 +234,31 @@
             <h4>Week 10</h4>
             <p class="text-muted">Workflow and segmentation</p>
           </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 col-sm-4 portfolio-item">
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal10">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/markus-spiske-hvSr_CVecVI-unsplash.jpg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Week 11</h4>
+            <p class="text-muted">Jupyter and some recordings</p>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-4 portfolio-item">
+         
+        </div>
+
+        <div class="col-md-4 col-sm-4 portfolio-item">
+          
         </div>
       </div>
     </div>
@@ -655,8 +686,8 @@
     </div>
   </div>
 
-    <!-- Modal 9 | Workflow and segmentation-->
-    <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
+  <!-- Modal 9 | Workflow and segmentation-->
+  <div class="portfolio-modal modal fade" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="close-modal" data-dismiss="modal">
@@ -961,7 +992,204 @@
                 </div>
               </div>
             </div>
+  </div>
+
+  <!-- Modal 10 | Images Classification-->
+  <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
           </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Week 11</h2>
+                <p class="item-intro text-muted">Jupyter and some recordings.</p>
+                <p  style="text-align: justify;">This week's work had as main goal to make the change of programming environment from Google Colab to Jupyter. 
+                  This transition is due to the fact that there is a network training unit in the department and so we can take advantage of its computational power.
+                  <br>Other tasks I did during this week were to collect images to use after training new models and start defining the structure of my thesis.
+                  Some of these processes will be detailed below.
+                </p>
+                
+                <h3 class="text-uppercase">Image Gathering</h3>
+                <p  style="text-align: justify;"> The first task I performed this week was the collection of images by the city of Aveiro.
+                   To store the images I launched a program that created several ROS topics with the images and saved the messages sent by the program to a bagfile.<br>
+                   After creating several bagfiles driving around the city, I extracted the results of each one to frames and noticed that the publication of the 
+                  images was not synchronized and slower than usual, as you can see in the videos below. 
+
+                </p>
+
+
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-lg-4 mx-auto">
+              <img style="width: 100%; margin-left: 0%;" src="img/portfolio/Week11/Esquerda.gif" alt="">
+            </div>
+
+            <div class="col-lg-4 mx-auto">
+              <img style="width: 100%; margin-left: 0%;" src="img/portfolio/Week11/Meio.gif" alt="">
+            </div>
+
+            <div class="col-lg-4 mx-auto">
+              <img style="width: 100%; margin-left: 0%;" src="img/portfolio/Week11/Direita.gif" alt="">
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <p  style="text-align: justify;"><br>
+                  I ended up analyzing the possibilities that led to this loss of frames and synchronism and I realized that by launching the bagfile recording, the framerate of the cameras dropped.
+                   After detecting this problem, I changed the way I captured the images, ending up recording a video directly from each camera. You can see bellow the videos from the last experiment.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-4 mx-auto">
+              <img style="width: 100%; margin-left: 0%;" src="img/portfolio/Week11/Esquerda_BEM.gif" alt="">
+            </div>
+
+            <div class="col-lg-4 mx-auto">
+              <img style="width: 100%; margin-left: 0%;" src="img/portfolio/Week11/Meio_BEM.gif" alt="">
+            </div>
+
+            <div class="col-lg-4 mx-auto">
+              <img style="width: 100%; margin-left: 0%;" src="img/portfolio/Week11/Direita_BEM.gif" alt="">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <h3 class="text-uppercase">Transition to Jupyter</h3>
+                <p  style="text-align: justify;">As I mentioned before, this week I changed the programming environment to jupyter and for that I asked a <a href="https://github.com/bernardomig" target="_blank">researcher </a>from LAR, who was responsible for
+                   the assembly and configuration of the  <a href="https://github.com/bernardomig/deep/tree/master/docs" target="_blank">new laboratory AI computer</a>. 
+                   <br>As one of his last works focused on image segmentation, I ended up exploring a bit what he had 
+                   already done, to adapt faster to jupyter. So I started by doing some experiments with the models he had already trained and you can see in the following images a comparison with the results obtained in the previous week.
+
+                  <br>
+                </p>
+                <br>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12 mx-auto">
+              <h5 class="text-uppercase" style="text-align: left; color: #3e7e75;">Image 1</h6>
+            </div>
+          </div>
+
+          <div class="row">
+            
+            <div class="col-lg-3 mx-auto">
+              <img style="width: 100%; margin-left: 0%;" src="img/portfolio/Week10/Segmentation_6230.png" alt="">
+            </div>
+
+            <div class="col-lg-3 mx-auto">
+              <img style="width: 100%; height:85%; margin-left: 0%;" src="img/portfolio/Week11/29_seg.png" alt="">
+            </div>
+
+            <div class="col-lg-3 mx-auto">
+              <img style="width: 100%; margin-left: 0%;" src="img/portfolio/Week10/Polygon_Cropped_6230.png" alt="">
+            </div>
+
+            <div class="col-lg-3 mx-auto">
+              <img style="width: 100%; height:85%; margin-left: 0%;" src="img/portfolio/Week11/29.png" alt="">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-12 mx-auto">
+              <h5 class="text-uppercase" style="text-align: left; color: #3e7e75;">Image 2</h6>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-3 mx-auto">
+              <img style="width: 100%; margin-left: 0%;" src="img/portfolio/Week10/Segmentation_6229.png" alt="">
+            </div>
+
+            <div class="col-lg-3 mx-auto">
+              <img style="width: 100%; height:85%; margin-left: 0%;" src="img/portfolio/Week11/30_seg.png" alt="">
+            </div>
+
+            <div class="col-lg-3 mx-auto">
+              <img style="width: 100%; margin-left: 0%;" src="img/portfolio/Week10/Polygon_Cropped_6229.png" alt="">
+            </div>
+
+            <div class="col-lg-3 mx-auto">
+              <img style="width: 100%; height:85%; margin-left: 0%;" src="img/portfolio/Week11/30.png" alt="">
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-lg-12 mx-auto">
+              <h5 class="text-uppercase" style="text-align: left; color: #3e7e75;">Image 3</h6>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-lg-3 mx-auto">
+              <img style="width: 100%; margin-left: 0%;" src="img/portfolio/Week10/Segmentation_6231.png" alt="">
+            </div>
+
+            <div class="col-lg-3 mx-auto">
+              <img style="width: 100%; height:85%; margin-left: 0%;" src="img/portfolio/Week11/31_seg.png" alt="">
+            </div>
+
+            <div class="col-lg-3 mx-auto">
+              <img style="width: 100%; margin-left: 0%;" src="img/portfolio/Week10/Polygon_Cropped_6231.png" alt="">
+            </div>
+
+            <div class="col-lg-3 mx-auto">
+              <img style="width: 100%; height:85%; margin-left: 0%;" src="img/portfolio/Week11/31.png" alt="">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <br>
+                <p  style="text-align: justify;">The architecture of the model I used to compare with last week's images is an ENET that was trained with the Berkeley DeepDrive dataset,
+                   and to make the segmentation of the images used in the previous week I had to make a resize to the images as you can see. 
+                   <br>
+                  Comparing the two models I noticed that in the second image the model from the previous week had better results, however in image 3 the new model got more details and 
+                  in the second one it was able to detect the road with more depth.
+                </p>
+                <br>
+
+                
+
+                
+                  <ul class="list-inline">
+                  <li>Date: 24 April 2020</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
         </div>
       </div>
     </div>
