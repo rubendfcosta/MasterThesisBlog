@@ -254,7 +254,18 @@
         </div>
 
         <div class="col-md-4 col-sm-4 portfolio-item">
-         
+          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal11">
+            <div class="portfolio-hover">
+              <div class="portfolio-hover-content">
+                <i class="fas fa-plus fa-3x"></i>
+              </div>
+            </div>
+            <img class="img-fluid" src="img/portfolio/markus-spiske-hvSr_CVecVI-unsplash.jpg" alt="">
+          </a>
+          <div class="portfolio-caption">
+            <h4>Week 12</h4>
+            <p class="text-muted">Panoramic Road</p>
+          </div>
         </div>
 
         <div class="col-md-4 col-sm-4 portfolio-item">
@@ -994,7 +1005,7 @@
             </div>
   </div>
 
-  <!-- Modal 10 | Images Classification-->
+  <!-- Modal 10 | Jupyter and some recordings-->
   <div class="portfolio-modal modal fade" id="portfolioModal10" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -1190,6 +1201,245 @@
       </div>
     </div>
   </div>
+
+  <!-- Modal 11 | Panoramic Road-->
+    <div class="portfolio-modal modal fade" id="portfolioModal11" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Week 12</h2>
+                  <p class="item-intro text-muted">Panoramic Road.</p>
+                  <p  style="text-align: justify;">After I made the move to the jupyter last week, during this week I focused on generating panoramic images after the segmentation of the individual images.
+                    Another task I did this week was to define an initial version of the "skeleton" of my dissertation.
+                  </p>
+                  
+                  <h3 class="text-uppercase">Creation of segmented panoramic images</h3>
+                  <p  style="text-align: justify;"> Since last week I ended up collecting videos around the city of Aveiro, this week I focused on the segmentation of those images and the subsequent creation of the panorama.
+                    With this, I passed the videos to frames and then applied several models that were already trained. You can see below the segmentation of some of the images collected.
+                  </p>
+                </div>
+              </div>
+            </div>
+  
+            <script>
+              img_arrayE60= new Array('img/portfolio/Week12/Individuais/Normais/Esquerda-060.jpg','img/portfolio/Week12/Individuais/Segmentadas/SegE_Context_BDD_503-060.png');
+              img_arrayM60= new Array('img/portfolio/Week12/Individuais/Normais/Meio-060.jpg','img/portfolio/Week12/Individuais/Segmentadas/SegM_Context_BDD_503-060.png');
+              img_arrayD60= new Array('img/portfolio/Week12/Individuais/Normais/Direita-060.jpg','img/portfolio/Week12/Individuais/Segmentadas/SegD_Context_BDD_503-060.png');
+
+              img_arrayE130= new Array('img/portfolio/Week12/Individuais/Normais/Esquerda-130.jpg','img/portfolio/Week12/Individuais/Segmentadas/SegE_Context_BDD_503-130.png');
+              img_arrayM130= new Array('img/portfolio/Week12/Individuais/Normais/Meio-130.jpg','img/portfolio/Week12/Individuais/Segmentadas/SegM_Context_BDD_503-130.png');
+              img_arrayD130= new Array('img/portfolio/Week12/Individuais/Normais/Direita-130.jpg','img/portfolio/Week12/Individuais/Segmentadas/SegD_Context_BDD_503-130.png');
+
+              img_arrayE180= new Array('img/portfolio/Week12/Individuais/Normais/Esquerda-180.jpg','img/portfolio/Week12/Individuais/Segmentadas/SegE_Context_BDD_503-180.png');
+              img_arrayM180= new Array('img/portfolio/Week12/Individuais/Normais/Meio-180.jpg','img/portfolio/Week12/Individuais/Segmentadas/SegM_Context_BDD_503-180.png');
+              img_arrayD180= new Array('img/portfolio/Week12/Individuais/Normais/Direita-180.jpg','img/portfolio/Week12/Individuais/Segmentadas/SegD_Context_BDD_503-180.png');
+              i=0;
+              
+              function myFunctionNormal()
+                {   var elem = document.getElementById("ButtonNormal");
+                    i++;
+                    if(i==img_arrayE60.length) {
+                  i=0;} 
+                    document.getElementById("E60").src=img_arrayE60[i];
+                    document.getElementById("M60").src=img_arrayM60[i];
+                    document.getElementById("D60").src=img_arrayD60[i];
+
+                    document.getElementById("E130").src=img_arrayE130[i];
+                    document.getElementById("M130").src=img_arrayM130[i];
+                    document.getElementById("D130").src=img_arrayD130[i];
+
+                    document.getElementById("E180").src=img_arrayE180[i];
+                    document.getElementById("M180").src=img_arrayM180[i];
+                    document.getElementById("D180").src=img_arrayD180[i];
+                    if (elem.value=="Change to Segmented Images") elem.value = "Change to Normal Images";
+                    else elem.value = "Change to Segmented Images";
+
+                      
+                }
+            </script>
+
+            <div class="row">
+              <div class="col-lg-4 mx-auto">
+                <img id="E60" style="width: 80%; margin-left: 0%;" src="img/portfolio/Week12/Individuais/Normais/Esquerda-060.jpg" alt="">
+              </div>
+              <div class="col-lg-4 mx-auto">
+                <img id="M60" style="width: 80%; margin-left: 0%;" src="img/portfolio/Week12/Individuais/Normais/Meio-060.jpg" alt="">
+              </div>
+              <div class="col-lg-4 mx-auto">
+                <img id="D60" style="width: 80%; margin-left: 0%;" src="img/portfolio/Week12/Individuais/Normais/Direita-060.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-4 mx-auto">
+                <img id="E130" style="width: 80%; margin-left: 0%;" src="img/portfolio/Week12/Individuais/Normais/Esquerda-130.jpg" alt="">
+              </div>
+              <div class="col-lg-4 mx-auto">
+                <img id="M130" style="width: 80%; margin-left: 0%;" src="img/portfolio/Week12/Individuais/Normais/Meio-130.jpg" alt="">
+              </div>
+              <div class="col-lg-4 mx-auto">
+                <img id="D130" style="width: 80%; margin-left: 0%;" src="img/portfolio/Week12/Individuais/Normais/Direita-130.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-4 mx-auto">
+                <img id="E180" style="width: 80%; margin-left: 0%;" src="img/portfolio/Week12/Individuais/Normais/Esquerda-180.jpg" alt="">
+              </div>
+              <div class="col-lg-4 mx-auto">
+                <img id="M180" style="width: 80%; margin-left: 0%;" src="img/portfolio/Week12/Individuais/Normais/Meio-180.jpg" alt="">
+              </div>
+              <div class="col-lg-4 mx-auto">
+                <img id="D180" style="width: 80%; margin-left: 0%;" src="img/portfolio/Week12/Individuais/Normais/Direita-180.jpg" alt="">
+              </div>
+            </div>
+            <div class="row" style="align-items: center;">
+              <div class="col-lg-4 mx-auto">
+                <input type="button" class="btn btn-primary"  id="ButtonNormal" onclick="myFunctionNormal()" value="Change to Segmented Images"></input> 
+              </div>
+            </div>
+
+          
+  
+  
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <p  style="text-align: justify;"><br>
+                    After I segmented the individual images, I adapted the code for creating the panoramic image used in week 6 to 
+                    create the panoramic images. As soon as I got the panoramic images already segmented, I tested several models 
+                    to realize the quality of their segmentation. Bellow you can compare the results obtained with three trained models.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <script>
+              img_arrayEnetNormal= new Array('img/portfolio/Week12/PanorâmicasSegmentadas/Normal_ENET_BDD-090.png','img/portfolio/Week12/PanorâmicasSegmentadas/Normal_ENET_BDD-150.png','img/portfolio/Week12/PanorâmicasSegmentadas/Normal_ENET_BDD-160.png');
+              img_arrayEnetSeg= new Array('img/portfolio/Week12/PanorâmicasSegmentadas/Seg_ENET_BDD-090.png','img/portfolio/Week12/PanorâmicasSegmentadas/Seg_ENET_BDD-150.png','img/portfolio/Week12/PanorâmicasSegmentadas/Seg_ENET_BDD-160.png');
+              img_arrayEnetMask= new Array('img/portfolio/Week12/PanorâmicasSegmentadas/Mask_ENET_BDD-090.png','img/portfolio/Week12/PanorâmicasSegmentadas/Mask_ENET_BDD-150.png','img/portfolio/Week12/PanorâmicasSegmentadas/Mask_ENET_BDD-160.png');
+
+              img_arrayContBDD48Normal= new Array('img/portfolio/Week12/PanorâmicasSegmentadas/Normal_Context_BDD_480-090.png','img/portfolio/Week12/PanorâmicasSegmentadas/Normal_Context_BDD_480-150.png','img/portfolio/Week12/PanorâmicasSegmentadas/Normal_Context_BDD_480-160.png');
+              img_arrayContBDD48Seg= new Array('img/portfolio/Week12/PanorâmicasSegmentadas/Seg_Context_BDD_480-090.png','img/portfolio/Week12/PanorâmicasSegmentadas/Seg_Context_BDD_480-150.png','img/portfolio/Week12/PanorâmicasSegmentadas/Seg_Context_BDD_480-160.png');
+              img_arrayContBDD48Mask= new Array('img/portfolio/Week12/PanorâmicasSegmentadas/Mask_Context_BDD_480-090.png','img/portfolio/Week12/PanorâmicasSegmentadas/Mask_Context_BDD_480-150.png','img/portfolio/Week12/PanorâmicasSegmentadas/Mask_Context_BDD_480-160.png');
+
+              img_arrayContBDD50Normal= new Array('img/portfolio/Week12/PanorâmicasSegmentadas/Normal_Context_BDD_503-090.png','img/portfolio/Week12/PanorâmicasSegmentadas/Normal_Context_BDD_503-150.png','img/portfolio/Week12/PanorâmicasSegmentadas/Normal_Context_BDD_503-160.png');
+              img_arrayContBDD50Seg= new Array('img/portfolio/Week12/PanorâmicasSegmentadas/Seg_Context_BDD_503-090.png','img/portfolio/Week12/PanorâmicasSegmentadas/Seg_Context_BDD_503-150.png','img/portfolio/Week12/PanorâmicasSegmentadas/Seg_Context_BDD_503-160.png');
+              img_arrayContBDD50Mask= new Array('img/portfolio/Week12/PanorâmicasSegmentadas/Mask_Context_BDD_503-090.png','img/portfolio/Week12/PanorâmicasSegmentadas/Mask_Context_BDD_503-150.png','img/portfolio/Week12/PanorâmicasSegmentadas/Mask_Context_BDD_503-160.png');
+              i=0;
+              function myFunction()
+                {
+                    i++;
+                    document.getElementById("EnetNormal").src=img_arrayEnetNormal[i];
+                    document.getElementById("EnetSeg").src=img_arrayEnetSeg[i];
+                    document.getElementById("EnetMask").src=img_arrayEnetMask[i];
+
+                    document.getElementById("Cont48Normal").src=img_arrayContBDD48Normal[i];
+                    document.getElementById("Cont48Seg").src=img_arrayContBDD48Seg[i];
+                    document.getElementById("Cont48Mask").src=img_arrayContBDD48Mask[i];
+
+                    document.getElementById("Cont50Normal").src=img_arrayContBDD50Normal[i];
+                    document.getElementById("Cont50Seg").src=img_arrayContBDD50Seg[i];
+                    document.getElementById("Cont50Mask").src=img_arrayContBDD50Mask[i];
+                    if(i==img_arrayEnetNormal.length-1) {
+                  i=-1;}   
+                }
+            </script>
+
+            <div class="row">
+              <div class="col-lg-12 mx-auto">
+                <h5 class="text-uppercase" style="text-align: left; color: #3e7e75;">Model: Enet trainded with BDD100k </h6>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 mx-auto">
+                <img id="EnetNormal" style="width: 100%; margin-left: 0%;" src="img/portfolio/Week12/PanorâmicasSegmentadas/Normal_ENET_BDD-090.png" alt="">
+              </div>
+              <div class="col-lg-4 mx-auto">
+                <img id="EnetSeg" style="width: 100%; margin-left: 0%;" src="img/portfolio/Week12/PanorâmicasSegmentadas/Seg_ENET_BDD-090.png" alt="">
+              </div>
+              <div class="col-lg-4 mx-auto">
+                <img id="EnetMask" style="width: 100%; margin-left: 0%;" src="img/portfolio/Week12/PanorâmicasSegmentadas/Mask_ENET_BDD-090.png" alt="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 mx-auto">
+                <h5 class="text-uppercase" style="text-align: left; color: #3e7e75;">Model: ContextNet trainded with BDD100k </h6>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 mx-auto">
+                <img id="Cont48Normal" style="width: 100%; margin-left: 0%;" src="img/portfolio/Week12/PanorâmicasSegmentadas/Normal_ENET_BDD-150.png" alt="">
+              </div>
+              <div class="col-lg-4 mx-auto">
+                <img id="Cont48Seg" style="width: 100%; margin-left: 0%;" src="img/portfolio/Week12/PanorâmicasSegmentadas/Seg_ENET_BDD-150.png" alt="">
+              </div>
+              <div class="col-lg-4 mx-auto">
+                <img id="Cont48Mask" style="width: 100%; margin-left: 0%;" src="img/portfolio/Week12/PanorâmicasSegmentadas/Mask_ENET_BDD-150.png" alt="">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12 mx-auto">
+                <h5 class="text-uppercase" style="text-align: left; color: #3e7e75;">Model: ContextNet trainded with BDD100k Version2</h6>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-4 mx-auto">
+                <img id="Cont50Normal" style="width: 100%; margin-left: 0%;" src="img/portfolio/Week12/PanorâmicasSegmentadas/Normal_ENET_BDD-160.png" alt="">
+              </div>
+              <div class="col-lg-4 mx-auto">
+                <img id="Cont50Seg" style="width: 100%; margin-left: 0%;" src="img/portfolio/Week12/PanorâmicasSegmentadas/Seg_ENET_BDD-160.png" alt="">
+              </div>
+              <div class="col-lg-4 mx-auto">
+                <img id="Cont50Mask" style="width: 100%; margin-left: 0%;" src="img/portfolio/Week12/PanorâmicasSegmentadas/Mask_ENET_BDD-160.png" alt="">
+              </div>
+            </div>
+            
+            <div class="row" style="align-items: center;">
+              <div class="col-lg-4 mx-auto">
+                <button onclick="myFunction()" class="btn btn-primary"  type="button">Change Images</button>
+              </div>
+            </div>
+
+  
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <br>
+                  <p  style="text-align: justify;">Comparing the results obtained with the different models we can see that in 
+                    some cases they are quite similar, which makes it difficult for us to identify the one with the best results.
+                    In order to simplify this task we should create a test dataset with images of Aveiro, and since we collected images last week,
+                     we will have to label them with a tool like Labelbox.<br> After that, we will be able to detect among the various trained models which of them has the best 
+                     performance in the streets of Aveiro. </p>
+                  </div>
+              </div>
+            </div>
+  
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                    <ul class="list-inline">
+                    <li>Date: 1 May 2020</li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fas fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
         </div>
       </div>
     </div>
